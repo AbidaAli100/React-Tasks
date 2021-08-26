@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="root"></div>
+
+ <!-- Adding React and React dom documents to create and render the components-->
+ <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+
+<!-- We need babel in the browser to compile the jsx code    -->
+<script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+
+<!-- Adding babel      ... note... use babel instead of javascript-->
+<script type="text/babel"> 
+
+/*
+Use the React unpackage website as shown by the instructor,
+ make a small project and have at least 3 DOM elements in it.
+ The first should be H1 saying "THIS IS MY FIRST REACT PROJECT"
+ second should be h5 tag saying the same of the instructor and 
+finally a p tag having your name. Use the JSX method to write code.
+*/
+const rootElement = document.getElementById('root')
+ 
+const elements =
+<>
+<h1 className = "heading"> THIS IS MY FIRST REACT PROJECT</h1>
+<h5 className = "head5">THIS IS MY FIRST REACT PROJECT</h5>
+<p className = "para"> MY NAME IS ABIDA ALI </p>
+ </>
+  
+ReactDOM.render(elements, rootElement)
+</script>
+</body>
+</html>
